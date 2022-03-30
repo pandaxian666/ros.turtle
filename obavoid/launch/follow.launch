@@ -8,9 +8,9 @@
 	<node pkg = "obavoid" type = "turtle_new"  name = "turtle4"  />
 	<node pkg = "obavoid" type = "turtle_new"  name = "turtle5"  />
 	<node pkg = "obavoid" type = "turtle_new"  name = "turtle6"  />
-    <!-- <创建乌龟tf广播/> -->
-    <node pkg="obavoid" type="turtle_broadcaster" args="turtle1" name="turtle1_broadcaster" />
-    <node pkg="obavoid" type="turtle_broadcaster" args="turtle2" name="turtle2_broadcaster" />
+    	<!-- <创建乌龟tf广播/> -->
+    	<node pkg="obavoid" type="turtle_broadcaster" args="turtle1" name="turtle1_broadcaster" />
+    	<node pkg="obavoid" type="turtle_broadcaster" args="turtle2" name="turtle2_broadcaster" />
 	<node pkg="obavoid" type="turtle_broadcaster" args="turtle3" name="turtle3_broadcaster" />
 	<node pkg="obavoid" type="turtle_broadcaster" args="turtle4" name="turtle4_broadcaster" />
 	<node pkg="obavoid" type="turtle_broadcaster" args="turtle5" name="turtle5_broadcaster" />
