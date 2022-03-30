@@ -1,0 +1,23 @@
+<launch>
+
+	<node pkg = "turtlesim" type = "turtlesim_node" name = "turtle1" output = "screen" />
+	<node pkg = "turtlesim" type = "turtle_teleop_key" name = "key_control" output = "screen" />
+	<!-- <创建多个乌龟节点/> -->
+	<node pkg = "obavoid" type = "turtle_new"  name = "turtle2"  />
+	<node pkg = "obavoid" type = "turtle_new"  name = "turtle3"  />
+	<node pkg = "obavoid" type = "turtle_new"  name = "turtle4"  />
+	<node pkg = "obavoid" type = "turtle_new"  name = "turtle5"  />
+	<node pkg = "obavoid" type = "turtle_new"  name = "turtle6"  />
+    <!-- <创建乌龟tf广播/> -->
+    <node pkg="obavoid" type="turtle_broadcaster" args="turtle1" name="turtle1_broadcaster" />
+    <node pkg="obavoid" type="turtle_broadcaster" args="turtle2" name="turtle2_broadcaster" />
+	<node pkg="obavoid" type="turtle_broadcaster" args="turtle3" name="turtle3_broadcaster" />
+	<node pkg="obavoid" type="turtle_broadcaster" args="turtle4" name="turtle4_broadcaster" />
+	<node pkg="obavoid" type="turtle_broadcaster" args="turtle5" name="turtle5_broadcaster" />
+	<node pkg="obavoid" type="turtle_broadcaster" args="turtle6" name="turtle6_broadcaster" />
+
+
+	<node pkg = "obavoid" type = "turtle_listener" name = "caster1" output = "screen" />
+
+	
+</launch>
